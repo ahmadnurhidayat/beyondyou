@@ -1,6 +1,12 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "beyondyou",
+	"routes": [
+		{
+			"pattern": "beyondyou.my.id",
+			"custom_domain": true
+		}
+	],
 	"main": "./src/worker/index.ts",
 	"compatibility_date": "2025-10-08",
 	"compatibility_flags": [
@@ -10,6 +16,9 @@
 		"enabled": true
 	},
 	"upload_source_maps": true,
+	"images": {
+		"binding": "IMAGES"
+	},
 	"assets": {
 		"directory": "./dist/client",
 		"not_found_handling": "single-page-application"
