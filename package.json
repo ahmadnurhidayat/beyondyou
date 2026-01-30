@@ -1,8 +1,8 @@
 {
-	"name": "vite-react-template",
+	"name": "beyondyou",
 	"description": "A template for building a React application with Vite, Hono, and Cloudflare Workers",
 	"cloudflare": {
-		"label": "Vite React Template",
+		"label": "BeyondYou",
 		"products": [
 			"Workers"
 		],
@@ -40,7 +40,7 @@
 		"deploy": "wrangler deploy",
 		"dev": "vite",
 		"lint": "eslint .",
-		"preview": "npm run build && vite preview"
+		"preview": "pnpm run build && vite preview"
 	},
 	"type": "module"
 }
